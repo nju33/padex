@@ -1,6 +1,6 @@
 # Padex
 
-Get request of some urls among linked pages
+Get response of some urls among linked pages
 
 [![npm: padex](https://img.shields.io/npm/v/padex.svg)](https://www.npmjs.com/package/padex)
 [![CircleCI](https://circleci.com/gh/nju33/padex.svg?style=svg&circle-token=135d3d7d9ec35d23b0a4810585a83bf8220b8f9f)](https://circleci.com/gh/nju33/padex)
