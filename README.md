@@ -42,7 +42,7 @@ const padex = new Padex('https://example.com', {
 })
 
 (async () => {
-	const result = padex.process();
+	const result = await padex.process();
 	// result === {
 	//   url: 'https://example.com',
 	//   options: {head, sleep, deep, validate},
