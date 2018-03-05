@@ -19,7 +19,11 @@ export class Document {
   hrefs: string[] = [];
   children: Document[] = [];
 
-  constructor(url: string, options: DocumentOptions) {
+  constructor(
+    url: string,
+    // public readonly parent: Document | undefined,
+    options: DocumentOptions
+  ) {
     this.urls = [url];
     this.options = options;
 
@@ -48,7 +52,7 @@ export class Document {
       html = document.body.innerHTML;
     }
 
-    return dom.getLinks(this.normalizedUrl, html)
+    return dom.getLinks(this.normalizedUrl, html);
   }
 
   async get(): Promise<DocumentResult> {
@@ -63,6 +67,14 @@ export class Document {
 
       return err;
     }
+  }
+
+  hasChild(document: Document): boolean {
+    return this.children.includes(document);
+  }
+
+  isError(): boolean {
+    return this.error !== undefined;
   }
 
   equal(otherDocument: Document): boolean {
