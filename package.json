@@ -1,6 +1,6 @@
 {
   "name": "padex",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "dist/padex.js",
   "cjs:main": "dist/padex.js",
   "types": "dist/padex.d.ts",
