@@ -4,6 +4,8 @@ import {Document} from './document';
 import {default as chalk} from 'chalk';
 import {log} from './logger';
 
+export {Document};
+
 export interface PadexOptions {
   head?: boolean;
   deep?: number;
